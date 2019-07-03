@@ -1,4 +1,4 @@
 # Poroject
-Poroject\n
+Poroject
 
 Project using create-react-app
