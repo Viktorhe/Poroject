@@ -1,33 +1,270 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
-
+.Main{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+    animation: App-logo-spin infinite 2s linear;
+    min-height: 16vmin;
+    height: 100%;
+    pointer-events: none;
+}
+.transButton{
+    background: transparent;
+    border: none !important;
+}
+.joinButton{
+    width: 150px;
+    height: 35px;
+}
+.viewButton{
+    width: 70px;
+    height: 35px;
+}
+.App-header {
+    background-color: #282c34;
+    /* min-height: 100vh; */
+    min-height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    font-size: calc(10px + 2vmin);
+    color: white;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.navbar {
+    background-color: #282c34;
+    /* min-height: 100vh; */
+    min-height: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    font-size: calc(10px + 1vmin);
+    color: white;
+}
+
+.navbar>nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+nav>button {
+    margin:10px;
+    cursor: pointer;
+    -webkit-text-fill-color: white;
+    text-decoration-color: black;
+}
+
+
+.header {
+    background-color: #6974f3;
+    margin: 5px;
+    height: 25vh;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    color: black;
+}
+
+.headerLogo {
+    background-color: #282c34;
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 85%;
+}
+
+.container{
+    margin:10px;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    flex-wrap: wrap;
+}
+.containerBar{
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.containerTitle {
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.containerOption {
+    display: flex;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    padding-right:1em;
+    padding-right:1em;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.nextMeetup{
+    background-color: rgb(199, 188, 188);
+    margin: 20px;
+    text-align: left;
+    padding-left:1em;
+    padding-right:1em;
+}
+.aboutMeetup{
+    /* background-color: rgb(199, 188, 188); */
+    margin: 20px;
+    text-align: left;
+    padding-left:1em;
+    padding-right:1em;
+}
+.avatar {
+    width:64px;
+    margin: 10px;
+    border:10px solid white;
+    border-radius: 250px;
+    -webkit-border-radius: 250px;
+    -moz-border-radius: 250px;
+}
+.memberMeetup{
+    background-color: rgb(199, 188, 188);
+    margin: 20px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding-left:1em;
+    padding-right:1em;
+}
+.listMeetup{
+    /* background-color: rgb(199, 188, 188); */
+    /* margin: 20px; */
+    margin-top: 20px;
+    height: 170px;
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left:1em;
+    padding-right:1em;
+}
+.detail{
+    width: 23%;
+    height: 100%;
+    background-color: rgb(199, 188, 188);
+    text-align: left;
+    padding-left:1em;
+    padding-right:1em;
+}
+.margin-30-px {
+    margin: 10px;
+}
+/* .eventDate,
+.eventTitle,
+.went,
+.view
+{
+    padding-left:1em
+} */
+.width-10 {
+    width: 20%;
+}
+.width-20 {
+    width: 20%;
+}
+
+.min-width-30 {
+    min-width: 30%;
+}
+.min-width-200px {
+    min-width: 200px;
+}
+.width-30 {
+    width: 30%;
+}
+
+.width-40 {
+    width: 40%;
+}
+.width-half {
+    width: 50%;
+}
+.width-60 {
+    width: 60%;
+}
+.width-full {
+    width: 100%;
+}
+
+.footer {
+    width: 98%;
+    /* display: flex;
+  flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+}
+.text-left {
+    text-align: left;
+}
+.text-center {
+    text-align: center;
+}
+.text-right {
+    text-align: right;
+}
+hr {
+    width: 98%;
+}
+.separator{
+    height: 10px;
+}
+.flex-column-space {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.flex-row-space {
+    min-width: 380px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .App-link {
-  color: #61dafb;
+    color: #61dafb;
 }
 
 @keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
