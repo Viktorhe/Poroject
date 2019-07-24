@@ -29,8 +29,8 @@ class Header extends React.Component {
       alert('Ups')
   }
   displayLogo(){
-    let useDefault = this.state.defaultLogo
-    let current = this.state.currentLogo
+    // let useDefault = this.state.defaultLogo
+    // let current = this.state.currentLogo
     if(this.state.defaultLogo){
       this.setState({
         defaultLogo : false,
@@ -76,10 +76,10 @@ class Header extends React.Component {
             &nbsp;
           </div>
           <div className="flex-row-space">
-            {this.state.date}
+            {/* {this.state.date} */}
             <button className="joinButton" onClick={() => alert("Join Us")}>Join Us</button>
-            <button onClick={() => this.add()}>Add</button>
-            <button onClick={() => this.subtract()}>subtract</button>
+            {/* <button onClick={() => this.add()}>Add</button>
+            <button onClick={() => this.subtract()}>subtract</button> */}
           </div>
         </div>
         <div className="">
