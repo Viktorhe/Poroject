@@ -23,45 +23,45 @@
         },
         {
             "id":2,
-            "name":"Hengky"
+            "name":"Hengky Semeru"
         },
         {
             "id":3,
-            "name":"Giovanni"
+            "name":"Giovanni Teman"
         },
         {
             "id":4,
-            "name":"Sofian"
+            "name":"Sofian Suban"
         },
         {
             "id":5,
-            "name":"Agung"
+            "name":"Agung Permana"
         }
     ],
     "pastMeetups":[
         {
             "id":1,
-            "title":"JakartaJS January Meetup with someone",
+            "title":"JakartaJS January Meetup with Bukalapak",
             "date":"25 January 2019",
-            "participant":105
+            "participant":125
         },
         {
             "id":2,
-            "title":"JakartaJS February Meetup with someone",
-            "date":"22 February 2019",
-            "participant":108
+            "title":"JakartaJS March Meetup with Hacktiv8",
+            "date":"29 March 2019",
+            "participant":138
         },
         {
             "id":3,
-            "title":"JakartaJS March Meetup with someone",
-            "date":"29 March 2019",
-            "participant":109
+            "title":"JakartaJS May Meetup with Blibi",
+            "date":"31 May 2019",
+            "participant":119
         },
         {
             "id":4,
-            "title":"JakartaJS April Meetup with someone",
-            "date":"26 April 2019",
-            "participant":110
+            "title":"JakartaJS July Meetup with Kumparan",
+            "date":"26 July 2019",
+            "participant":127
         }
     ]
 }

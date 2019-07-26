@@ -25,12 +25,12 @@ class Content extends React.Component {
     // eslint-disable-next-line
     else if(this._name == "memberMeetup"){
       return(
-        <Member/>
+        <Member showDetail={this.props.showDetail} dataMembers={this.props.dataMembers} />
       )
     }
     else{
       return(
-        <List/>
+        <List showDetail={this.props.showDetail} dataMeetups={this.props.dataMeetups} />
       )
     }
   }

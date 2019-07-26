@@ -1,6 +1,6 @@
 import React from 'react';
 import Axios from 'axios';
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route } from "react-router-dom";
 
 import Navbar from './components/navbar';
 import Header from './components/header';
@@ -13,12 +13,11 @@ import Container from './components/container/container';
 class Main extends React.Component{
   constructor(props) {
     super(props)
-    // const displayHome = this.displayHome
-    // const displayNavBar = this.displayNavBar
-    // const displayHeader = this.displayHeader
-    // const displayLists = this.displayLists
-    // const displayMembers = this.displayMembers
-    // const displayAbout = this.displayAbout
+    this.state = {
+      dataMembers:[],
+      dataMeetups:[]
+    }
+    this.fetching()
   }
 
   componentWillMount(){
@@ -29,21 +28,38 @@ class Main extends React.Component{
   componentDidMount(){
     console.log("did mount");
   }
+  
   fetching(){
-    let opt = {
+    let optmember = {
       method:'get',
-      url:'https://jsonplaceholder.typicode.com/posts'
-
+      url:'https://my-json-server.typicode.com/Viktorhe/Poroject/members'
     }
-    let request = Axios(opt)
+    Axios(optmember)
     .then (({data}) => {
-      console.log(data);
+      this.setState({
+        dataMembers : data
+      })
+      // console.log(data);
+    })
+    .catch(error => {
+      console.error(error);
+    })
+    let optmeetup = {
+      method:'get',
+      url:'https://my-json-server.typicode.com/Viktorhe/Poroject/pastMeetups'
+    }
+    Axios(optmeetup)
+    .then (({data}) => {
+      this.setState({
+        dataMeetups : data
+      })
+      this.render()
+      // console.log(data);
     })
     .catch(error => {
       console.error(error);
     })
   }
-
   displayNavBar = () => {
     return(
       <Navbar appName="QTemu" 
@@ -78,12 +94,12 @@ class Main extends React.Component{
   }
   displayLists = () => {
     return(
-      <Container name="listMeetup" title="Past Meetups" haveDetail="true" />
+      <Container name="listMeetup" title="Past Meetups" haveDetail={true} dataMeetups={this.state.dataMeetups} />
     )
   }
   displayMembers = () => {
     return(
-      <Container name="memberMeetup" title="Members" haveDetail="true" />
+      <Container name="memberMeetup" title="Members" haveDetail={true} dataMembers={this.state.dataMembers} />
     )
   }
   displayAbout = () => {
