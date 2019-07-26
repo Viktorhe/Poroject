@@ -16,27 +16,6 @@
             "password":"test"
         }
     ],
-    "header":[
-        {
-            "title":"Special Meetup",
-            "Location":"Jakarta, Indonesia",
-            "Members":"1,078",
-            "Organizers":"Adhy Wiranata"
-        }
-    ]
-    ,
-    "nextMeetup":[
-        {
-            "title":"Awesome meetup and event",
-            "date":"28 September 2019",
-            "content":"<b>Hello, JavaScript & Node.js Ninjas!<br/>Get ready for our monthly meetup JakartaJS! This will be our twenty seventh meetup of 2019!<br/>The meetup format will contain some short stories and technical talks.<br/>If you have a short announcement you'd like to share with audience, you may do so during open mic announcements.<br/><br/>Rememeber to bring a photo ID to get through building security.<br/><br/>- - - -<br/><br/>See you there!<br/><br/>Best, Hengki, Giovanni, Sofian, Riza, Agung The JakartaJS Organizers</b><br/><br/>&nbsp;"
-        }
-    ],
-    "aboutMeetup":[
-        {
-            "content":"Come and meet other developers interested in the JavaScript and it's library in the Greater Jakarta area.<br/><br/>Twitter: <a href=\"https://twitter.com/JakartaJS\">@JakartaJS</a> and we use the hashtag<a href=\"https://twitter.com/hashtag/jakartajs?src=hash\">#jakartajs</a>"
-        }
-    ],
     "members":[
         {
             "id":1,
@@ -63,158 +42,26 @@
         {
             "id":1,
             "title":"JakartaJS January Meetup with someone",
-            "date":"05 January 2019",
+            "date":"25 January 2019",
             "participant":105
         },
         {
             "id":2,
-            "title":"JakartaJS January Meetup with someone",
-            "date":"12 January 2019",
+            "title":"JakartaJS February Meetup with someone",
+            "date":"22 February 2019",
             "participant":108
         },
         {
             "id":3,
-            "title":"JakartaJS January Meetup with someone",
-            "date":"19 January 2019",
+            "title":"JakartaJS March Meetup with someone",
+            "date":"29 March 2019",
             "participant":109
         },
         {
             "id":4,
-            "title":"JakartaJS January Meetup with someone",
-            "date":"26 January 2019",
+            "title":"JakartaJS April Meetup with someone",
+            "date":"26 April 2019",
             "participant":110
-        },
-        {
-            "id":5,
-            "title":"JakartaJS February Meetup with someone",
-            "date":"02 February 2019",
-            "participant":120
-        },
-        {
-            "id":6,
-            "title":"JakartaJS February Meetup with someone",
-            "date":"09 February 2019",
-            "participant":118
-        },
-        {
-            "id":7,
-            "title":"JakartaJS February Meetup with someone",
-            "date":"16 February 2019",
-            "participant":114
-        },
-        {
-            "id":8,
-            "title":"JakartaJS February Meetup with someone",
-            "date":"23 February 2019",
-            "participant":112
-        },
-        {
-            "id":9,
-            "title":"JakartaJS March Meetup with someone",
-            "date":"02 March 2019",
-            "participant":120
-        },
-        {
-            "id":10,
-            "title":"JakartaJS March Meetup with someone",
-            "date":"09 March 2019",
-            "participant":118
-        },
-        {
-            "id":11,
-            "title":"JakartaJS March Meetup with someone",
-            "date":"16 March 2019",
-            "participant":114
-        },
-        {
-            "id":12,
-            "title":"JakartaJS March Meetup with someone",
-            "date":"23 March 2019",
-            "participant":112
-        },
-        {
-            "id":13,
-            "title":"JakartaJS March Meetup with someone",
-            "date":"30 March 2019",
-            "participant":102
-        },
-        {
-            "id":14,
-            "title":"JakartaJS April Meetup with someone",
-            "date":"06 April 2019",
-            "participant":120
-        },
-        {
-            "id":15,
-            "title":"JakartaJS April Meetup with someone",
-            "date":"13 April 2019",
-            "participant":118
-        },
-        {
-            "id":16,
-            "title":"JakartaJS April Meetup with someone",
-            "date":"20 April 2019",
-            "participant":114
-        },
-        {
-            "id":17,
-            "title":"JakartaJS April Meetup with someone",
-            "date":"27 April 2019",
-            "participant":112
-        },
-        {
-            "id":18,
-            "title":"JakartaJS May Meetup with someone",
-            "date":"04 May 2019",
-            "participant":120
-        },
-        {
-            "id":19,
-            "title":"JakartaJS May Meetup with someone",
-            "date":"11 May 2019",
-            "participant":118
-        },
-        {
-            "id":20,
-            "title":"JakartaJS May Meetup with someone",
-            "date":"18 May 2019",
-            "participant":114
-        },
-        {
-            "id":21,
-            "title":"JakartaJS May Meetup with someone",
-            "date":"25 May 2019",
-            "participant":112
-        },
-        {
-            "id":22,
-            "title":"JakartaJS June Meetup with someone",
-            "date":"01 June 2019",
-            "participant":120
-        },
-        {
-            "id":23,
-            "title":"JakartaJS June Meetup with someone",
-            "date":"08 June 2019",
-            "participant":118
-        },
-        {
-            "id":24,
-            "title":"JakartaJS June Meetup with someone",
-            "date":"15 June 2019",
-            "participant":114
-        },
-        {
-            "id":25,
-            "title":"JakartaJS June Meetup with someone",
-            "date":"22 June 2019",
-            "participant":112
-        },
-        {
-            "id":26,
-            "title":"JakartaJS June Meetup with someone",
-            "date":"29 June 2019",
-            "participant":122
         }
     ]
 }
