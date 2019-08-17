@@ -1,13 +1,14 @@
 import React from 'react';
 class ContainerOption extends React.Component{
-  // constructor(props) {
-  //   super(props)
-  // }
+  // eslint-disable-next-line
+  constructor(props) {
+    super(props)
+  }
   render(){
     // eslint-disable-next-line
-    if(this.props.haveDetail == "true")
+    if(this.props.haveDetail == true && this.props.showDetail == false)
       return(
-        <button className="transButton" onClick={() => alert('See Detail')}>See all</button>
+        <button className="transButton" onClick={() => this.props.setShowDetail(true)}>See all</button>
       )
     else
       return (

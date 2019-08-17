@@ -63,12 +63,17 @@ nav>button {
     -webkit-text-fill-color: white;
     text-decoration-color: black;
 }
-
+nav>a {
+    margin:10px;
+    cursor: pointer;
+    -webkit-text-fill-color: white;
+    text-decoration-color: black;
+}
 
 .header {
     background-color: #6974f3;
     margin: 5px;
-    height: 25vh;
+    height: 28vh;
     display: flex;
     flex-direction: row;
     align-items: flex-start;

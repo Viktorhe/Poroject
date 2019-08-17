@@ -1,32 +1,26 @@
 import React from 'react';
+import { Link } from "react-router-dom";
 
-class NavBar extends React.Component{
-//   constructor(props) {
-//       super(props)
-//   }
-  render(){
+const NavBar = ({appName, link1, link2, link3, link4, link5}) =>{
     return (
       <div className="navbar">
         <nav className="appName">
-            <button className="transButton" onClick={() => window.location.reload()}><b>{this.props.appName}</b></button>
+            {/* <button className="transButton" onClick={() => window.location.reload()}><b>{appName}</b></button> */}
+            <Link className="transButton" to="/">{appName}</Link>
         </nav>
         <nav className="link">
-            <button className="transButton" onClick={() => alert(this.props.link1)}>{this.props.link1}</button>
+            <button className="transButton" onClick={() => alert(link1)}>{link1}</button>
+            {/* <Link className="transButton" to="/about">{link1}</Link> */}
         </nav>
         <nav className="link">
-            <button className="transButton" onClick={() => alert(this.props.link2)}>{this.props.link2}</button>
+            {/* <button className="transButton" onClick={() => alert(link2)}>{link2}</button> */}
+            <Link className="transButton" to="/explore">{link2}</Link>
         </nav>
         <nav className="link">
-            &nbsp;
+            <Link className="transButton" to="/member">{link3}</Link>
         </nav>
         <nav className="link">
-            &nbsp;
-        </nav>
-        <nav className="link">
-            &nbsp;
-        </nav>
-        <nav className="link">
-            &nbsp;
+            <Link className="transButton" to="/about">{link4}</Link>
         </nav>
         <nav className="link">
             &nbsp;
@@ -56,11 +50,16 @@ class NavBar extends React.Component{
             &nbsp;
         </nav>
         <nav className="link">
-            <button className="transButton" onClick={() => alert(this.props.link3)}>{this.props.link3}</button>
+            &nbsp;
+        </nav>
+        <nav className="link">
+            &nbsp;
+        </nav>
+        <nav className="link">
+            <button className="transButton" onClick={() => alert(link5)}>{link5}</button>
         </nav>
       </div>
     );
-  }
 }
 
 export default NavBar;
